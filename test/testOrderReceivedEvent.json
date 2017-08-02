@@ -1,0 +1,35 @@
+{
+    "resource": "/distro/orders",
+    "path": "/distro/orders",
+    "httpMethod": "PUT",
+    "headers": null,
+    "queryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "path": "/distro/orders",
+        "accountId": "652113781882",
+        "resourceId": "4i4van",
+        "stage": "test-invoke-stage",
+        "requestId": "test-invoke-request",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": "652113781882",
+            "cognitoIdentityId": null,
+            "caller": "AIDAIRBPCFMOJRXPNL7OU",
+            "apiKey": "test-invoke-api-key",
+            "sourceIp": "test-invoke-source-ip",
+            "accessKey": "ASIAJCG3QRGVIYKAU5UQ",
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": "arn:aws:iam::652113781882:user/elliott",
+            "userAgent": "Apache-HttpClient/4.5.x (Java/1.8.0_112)",
+            "user": "AIDAIRBPCFMOJRXPNL7OU"
+        },
+        "resourcePath": "/distro/orders",
+        "httpMethod": "PUT",
+        "apiId": "9rjbuh16l0"
+    },
+    "body": "{\n  \"TxnId\": \"1234566\",\n  \"TimeCreated\": \"2017-08-31 12:00:00\",\n  \"Total\": 100\n}",
+    "isBase64Encoded": false
+}

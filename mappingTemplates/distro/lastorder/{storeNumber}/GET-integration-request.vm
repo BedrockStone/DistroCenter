@@ -1,0 +1,8 @@
+{
+    "TableName": "DistroLastUploaded",
+    "Key": { 
+        "StoreNumber" : {
+            "N":"$input.params('storeNumber')"
+            }
+        }
+}

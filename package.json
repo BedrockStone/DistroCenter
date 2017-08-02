@@ -1,0 +1,35 @@
+{
+  "name": "distro-center",
+  "version": "1.0.0",
+  "engineStrict": true,
+  "engines": {
+    "node": "6.10.1"
+  },
+  "description": "Bedrock Stone's Distribution Center Software",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive --reporter spec",
+    "deploy": "gulp deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lambda-proxy-response": "^2.0.0"
+  },
+  "devDependencies": {
+    "api-gateway-mapping-template": "0.0.7",
+    "chai": "^4.1.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0",
+    "gulp-zip": "^4.0.0",
+    "lambda-tester": "^3.0.2",
+    "mocha": "^3.4.2",
+    "node-aws-lambda": "^0.1.8",
+    "run-sequence": "^2.1.0",
+    "sinon": "^2.4.1",
+    "aws-sdk-mock": "^1.7.0",
+    "app-root-path": "^2.0.1"
+    
+  }
+}
