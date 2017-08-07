@@ -6,7 +6,7 @@ const LambdaTester = require('lambda-tester');
 const sinon = require('sinon');
 const AWS = require('aws-sdk-mock');
 
-const myHandler =  requireLib('src/orderReceived').dynamoPut;
+const myHandler =  requireLib('src/orderReceived').handler;
 //const config = requireLib('src/config');
 const testEvent = require('./testorderReceivedEvent');
 

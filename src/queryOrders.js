@@ -10,15 +10,13 @@ exports.handler = (event, context, callback) => {
     
     let TableName = "QuickbooksReceipt";
     let params = {
-        TableName
+        TableName,
+        "IndexName": "StoreNumber-ShipDate-index-copy",
+        "KeyConditionExpression" : "StoreNumber = :val",
+        "ExpressionAttributeValues": { ":val": parseInt(event.pathParameters.storeNumber)}
     };
-    params.Item = {};
-    let body = JSON.parse(event.body);
-    Object.keys(body).forEach(key => {
-        console.log(`Setting Item[${key}] = ${body[key]}`);
-        params.Item[key] = body[key];
-    });
-    dynamoDb.put(params, (err, data)=>{
+    console.log(JSON.stringify(params));
+    dynamoDb.query(params, (err, data)=>{
         if(err){
             console.log('DynamoDb error: ', JSON.stringify(err, null, 2));
             let response = lambdaProxy.response(500, {"Content-Type":"application/json"}, err);
@@ -27,11 +25,13 @@ exports.handler = (event, context, callback) => {
             
         }else{
             console.log('DynamoDb response:', JSON.stringify(data, null, 2));
-            let response = lambdaProxy.response(200, {"Content-Type":"application/json"},data);
+            let response = lambdaProxy.response(200, 
+                    {"Content-Type":"application/json",
+                    "Access-Control-Allow-Origin":"'*'"
+                },data);
             callback(null, response);
         }
     });
 };
-
 
 

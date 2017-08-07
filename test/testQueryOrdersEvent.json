@@ -1,0 +1,37 @@
+{
+    "resource": "/distro/shipping/{storeNumber}",
+    "path": "/distro/shipping/1",
+    "httpMethod": "GET",
+    "headers": null,
+    "queryStringParameters": null,
+    "pathParameters": {
+        "storeNumber": "1"
+    },
+    "stageVariables": null,
+    "requestContext": {
+        "path": "/distro/shipping/{storeNumber}",
+        "accountId": "652113781882",
+        "resourceId": "aunyj3",
+        "stage": "test-invoke-stage",
+        "requestId": "test-invoke-request",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": "652113781882",
+            "cognitoIdentityId": null,
+            "caller": "AIDAIRBPCFMOJRXPNL7OU",
+            "apiKey": "test-invoke-api-key",
+            "sourceIp": "test-invoke-source-ip",
+            "accessKey": "ASIAJUABWK775JLERRXA",
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": "arn:aws:iam::652113781882:user/elliott",
+            "userAgent": "Apache-HttpClient/4.5.x (Java/1.8.0_112)",
+            "user": "AIDAIRBPCFMOJRXPNL7OU"
+        },
+        "resourcePath": "/distro/shipping/{storeNumber}",
+        "httpMethod": "GET",
+        "apiId": "9rjbuh16l0"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}

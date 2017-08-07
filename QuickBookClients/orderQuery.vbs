@@ -26,18 +26,17 @@ Dim postUrl
 postUrl  = "https://9rjbuh16l0.execute-api.us-east-1.amazonaws.com/prod/distro/orders"
 Dim lastOrdersUrl
 lastOrdersUrl = "https://9rjbuh16l0.execute-api.us-east-1.amazonaws.com/prod/distro/lastorder/" & storeNumber & "/"
-
+Wscript.Echo "Checking for last upload for Store Number " & storeNumber
 lastOrderResponse = HTTPRequest(lastOrdersUrl,"", "GET" )
-Wscript.Echo(lastOrderResponse)
 Set json = New VbsJson
 set olo = json.Decode(CStr(lastOrderResponse))
 lastRecord = olo.Item("LastUpdated")
+Wscript.Echo "Last Upload was " & lastRecord
 sConnectString = "DSN=QBremote;OLE DB Services=-2"
 sSQL = "SELECT * FROM SalesReceipt WHERE TimeCreated > {ts '" & lastRecord & "'}" 
-WScript.Echo sSQL
 Set oConnection = CreateObject("ADODB.Connection")
 Set oRecordset = CreateObject("ADODB.Recordset")
-
+WScript.Echo "Checking for new orders..."
 oConnection.Open sConnectString
 'oRecordset.Open sSQL, oConnection', adOpenStatic, adLockOptimistic
 set oRecordSet = oConnection.Execute(sSQL)
@@ -46,8 +45,14 @@ totalUpload = 0
 Do While (not oRecordset.EOF)
     limit = oRecordset.Fields.Count - 1
     Set ordersDict = CreateObject("Scripting.Dictionary")
-    For ix = 0 To limit    
-        ordersDict.Add oRecordSet.Fields.Item(ix).Name, oRecordSet.Fields.Item(ix).Value
+    For ix = 0 To limit
+        val = oRecordSet.Fields.Item(ix).Value
+        'VBS doesn't give iso dates, convert
+        If IsDate(val) Then
+            val = iso_date(val)
+        End If
+        ordersDict.Add oRecordSet.Fields.Item(ix).Name, val
+
     Next
     Set itemsDict = CreateObject("Scripting.Dictionary")
     sSQL = "SELECT * FROM SalesReceiptItem WHERE TxnID = '" & oRecordSet.Fields("TxnID") & "'"
@@ -68,11 +73,13 @@ Do While (not oRecordset.EOF)
     ordersDict.Add "Lines", itemsDict
     WScript.Echo "Found Transaction: " & ordersDict("TxnID") & " with " & ordersDict("Lines").Count & " items."
     WScript.Echo "Uploading payload..."
+    
     itemsRecordSet.Close
     Set itemsRecordSet = Nothing
     oRecordset.MoveNext
         
     payload = json.Encode(ordersDict)
+    
     responseFromServer = HTTPRequest(postUrl, payload, "PUT")
     totalUpload = totalUpload + 1
     WScript.Echo "Upload complete."
@@ -85,9 +92,11 @@ Set oRecordset = Nothing
 oConnection.Close
 Set oConnection = Nothing
 Set json = Nothing
-
-WScript.Echo "Sucessfully uploaded " & totalUpload & " orders."
-
+If totalUpload > 0 Then
+    WScript.Echo "Sucessfully uploaded " & totalUpload & " orders."
+Else
+    WScript.Echo "No new orders to upload"
+End If
 Function HTTPRequest(sUrl, sRequest, verb)
   set oHTTP = CreateObject("Microsoft.XMLHTTP")
   oHTTP.open verb, sUrl,false
@@ -428,3 +437,20 @@ Class VbsJson
     End Function
 
 End Class
+
+Function iso_date(byval dt)
+    dim y: y = year(dt)
+    dim m: m=month(dt)
+    dim d: d=day(dt)
+    dim h: h=hour(dt)
+    dim n: n=minute(dt)
+    dim s: s=second(dt)
+
+    if m < 10 then m="0" & m
+    if d < 10 then d="0" & d
+    if h < 10 then h="0" & h
+    if n < 10 then n="0" & n
+    if s < 10 then s="0" & s
+    
+    iso_date = y & "-" & m & "-" & d & " " & h & ":" & n & ":" & s
+End Function

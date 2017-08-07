@@ -1,9 +1,11 @@
-var gulp = require('gulp');
-var zip = require('gulp-zip');
-var del = require('del');
-var install = require('gulp-install');
-var runSequence = require('run-sequence');
-var awsLambda = require("node-aws-lambda");
+"use strict";
+const gulp = require('gulp');
+const zip = require('gulp-zip');
+const del = require('del');
+const install = require('gulp-install');
+const runSequence = require('run-sequence');
+const awsLambda = require("node-aws-lambda");
+const argv = require('yargs').argv;
 
 gulp.task('clean', function() {
   return del(['./dist', './dist.zip']);
@@ -27,7 +29,12 @@ gulp.task('zip', function() {
 });
 
 gulp.task('upload', function(callback) {
-  awsLambda.deploy('./dist.zip', require("./deployment-config").orderReceived, callback);
+  let deploymentConfig = require("./deployment-config");
+  let config = deploymentConfig.orderReceived;
+  if(argv.config){
+    config = deploymentConfig[argv.config]
+  }
+  awsLambda.deploy('./dist.zip', config, callback);
 });
 
 gulp.task('deploy', function(callback) {
@@ -40,3 +47,4 @@ gulp.task('deploy', function(callback) {
     callback
   );
 });
+
