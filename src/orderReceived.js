@@ -15,8 +15,11 @@ exports.handler = (event, context, callback) => {
     params.Item = {};
     let body = JSON.parse(event.body);
     Object.keys(body).forEach(key => {
-        console.log(`Setting Item[${key}] = ${body[key]}`);
-        params.Item[key] = body[key];
+        //console.log(`Setting Item[${key}] = ${body[key]}`);
+        if ( body[key] !== null) {
+            params.Item[key] = body[key];
+        }
+        
     });
     dynamoDb.put(params, (err, data)=>{
         if(err){

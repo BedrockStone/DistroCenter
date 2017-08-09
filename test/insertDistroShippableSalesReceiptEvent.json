@@ -1,0 +1,1306 @@
+{
+    "Records": [
+        {
+            "eventID": "25863732c2f1d58af8ff42d42a3822fb",
+            "eventName": "INSERT",
+            "eventVersion": "1.1",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "us-east-1",
+            "dynamodb": {
+                "ApproximateCreationDateTime": 1502250120,
+                "Keys": {
+                    "TimeCreated": {
+                        "S": "2017-08-08 06:16:38"
+                    },
+                    "TxnID": {
+                        "S": "1327181411857106945"
+                    }
+                },
+                "NewImage": {
+                    "BillingInformationFirstName": {
+                        "S": "ABRAHAM"
+                    },
+                    "Discount": {
+                        "S": "0"
+                    },
+                    "FQSaveToCache": {
+                        "BOOL": false
+                    },
+                    "BillingInformationLastName": {
+                        "S": "GARCIA"
+                    },
+                    "TimeCreated": {
+                        "S": "2017-08-08 06:16:38"
+                    },
+                    "TimeModified": {
+                        "S": "2017-08-08 06:16:38"
+                    },
+                    "SalesReceiptNumber": {
+                        "N": "54562"
+                    },
+                    "TaxAmount": {
+                        "S": "0"
+                    },
+                    "TenderAccount01TenderAmount": {
+                        "S": "59.97"
+                    },
+                    "HistoryDocStatus": {
+                        "S": "Regular"
+                    },
+                    "TenderAccount01TipAmount": {
+                        "S": "0"
+                    },
+                    "BillingInformationCompanyName": {
+                        "S": "ABRAHAM GARCIA"
+                    },
+                    "SalesReceiptType": {
+                        "S": "Sales"
+                    },
+                    "StoreNumber": {
+                        "N": "1"
+                    },
+                    "BillingInformationPhone2": {
+                        "S": "512-266-9605"
+                    },
+                    "ShippingInformationShipping": {
+                        "S": "0"
+                    },
+                    "DiscountPercent": {
+                        "S": "0"
+                    },
+                    "QuickBooksFlag": {
+                        "S": "Completed"
+                    },
+                    "TenderType": {
+                        "S": "Account"
+                    },
+                    "TaxPercentage": {
+                        "S": "0"
+                    },
+                    "TaxCategory": {
+                        "S": "Sales Tx"
+                    },
+                    "PriceLevelNumber": {
+                        "S": "1"
+                    },
+                    "TxnDate": {
+                        "S": "2017-08-08 00:00:00"
+                    },
+                    "Subtotal": {
+                        "S": "59.97"
+                    },
+                    "BillingInformationPhone": {
+                        "S": "512-704-5921"
+                    },
+                    "TxnState": {
+                        "S": "Normal"
+                    },
+                    "Cashier": {
+                        "S": "MISSY"
+                    },
+                    "Workstation": {
+                        "N": "8"
+                    },
+                    "TxnID": {
+                        "S": "1327181411857106945"
+                    },
+                    "CustomerListID": {
+                        "S": "-3801663687496924159"
+                    },
+                    "Total": {
+                        "S": "59.97"
+                    },
+                    "StoreExchangeStatus": {
+                        "S": "Modified"
+                    },
+                    "Associate": {
+                        "S": "MISSY"
+                    },
+                    "ItemsCount": {
+                        "N": "2"
+                    },
+                    "Lines": {
+                        "M": {
+                            "1": {
+                                "M": {
+                                    "SalesReceiptItemTaxCode": {
+                                        "S": "Non"
+                                    },
+                                    "ShippingInformationPostalCode": {
+                                        "NULL": true
+                                    },
+                                    "TaxAmount": {
+                                        "S": "0"
+                                    },
+                                    "SalesReceiptType": {
+                                        "S": "Sales"
+                                    },
+                                    "BillingInformationPhone2": {
+                                        "S": "512-266-9605"
+                                    },
+                                    "BillingInformationPhone3": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationPhone4": {
+                                        "NULL": true
+                                    },
+                                    "DiscountPercent": {
+                                        "S": "0"
+                                    },
+                                    "TenderAccount04TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck01CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemSize": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationState": {
+                                        "NULL": true
+                                    },
+                                    "Subtotal": {
+                                        "S": "59.97"
+                                    },
+                                    "TxnState": {
+                                        "S": "Normal"
+                                    },
+                                    "SalesReceiptItemAssociate": {
+                                        "S": "MISSY"
+                                    },
+                                    "TenderCheck08CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck07CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TxnID": {
+                                        "S": "1327181411857106945"
+                                    },
+                                    "StoreExchangeStatus": {
+                                        "S": "Modified"
+                                    },
+                                    "ShippingInformationCity": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemQty": {
+                                        "S": "1"
+                                    },
+                                    "BillingInformationStreet": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationLastName": {
+                                        "S": "GARCIA"
+                                    },
+                                    "TenderAccount06TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDiscount": {
+                                        "S": "0"
+                                    },
+                                    "TenderCheck02CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationPostalCode": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemSeqNo": {
+                                        "N": "1"
+                                    },
+                                    "ShippingInformationShipping": {
+                                        "S": "0"
+                                    },
+                                    "TenderCreditCard01CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard02Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TaxCategory": {
+                                        "S": "Sales Tx"
+                                    },
+                                    "ShippingInformationFullName": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck06CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemSerialNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDiscountType": {
+                                        "NULL": true
+                                    },
+                                    "FQSaveToCache": {
+                                        "BOOL": false
+                                    },
+                                    "TenderAccount10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemWebDesc": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemExtendedTax": {
+                                        "S": "0"
+                                    },
+                                    "SalesReceiptNumber": {
+                                        "N": "54562"
+                                    },
+                                    "TenderDebitCard01Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "StoreNumber": {
+                                        "N": "1"
+                                    },
+                                    "TenderGift03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationState": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard02TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemUPC": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationPhone3": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationPhone2": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationPhone4": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck10CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard03TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "ItemsCount": {
+                                        "N": "2"
+                                    },
+                                    "TenderCash04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "PromoCode": {
+                                        "NULL": true
+                                    },
+                                    "TrackingNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemListID": {
+                                        "S": "-6310223495175437823"
+                                    },
+                                    "BillingInformationCity": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount09TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard03CardName": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationCountry": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount01TenderAmount": {
+                                        "S": "59.97"
+                                    },
+                                    "TenderAccount03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemCost": {
+                                        "S": "0"
+                                    },
+                                    "ShippingInformationCompanyName": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard04TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "QuickBooksFlag": {
+                                        "S": "Completed"
+                                    },
+                                    "TenderType": {
+                                        "S": "Account"
+                                    },
+                                    "TenderAccount09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TaxPercentage": {
+                                        "S": "0"
+                                    },
+                                    "TenderDebitCard04Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift09GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift02GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "Cashier": {
+                                        "S": "MISSY"
+                                    },
+                                    "TenderAccount02TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "Workstation": {
+                                        "N": "8"
+                                    },
+                                    "BillingInformationCountry": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationShipBy": {
+                                        "NULL": true
+                                    },
+                                    "Associate": {
+                                        "S": "MISSY"
+                                    },
+                                    "TenderCheck01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard02CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationCompanyName": {
+                                        "S": "ABRAHAM GARCIA"
+                                    },
+                                    "TenderDebitCard03Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDiscountPercent": {
+                                        "S": "0"
+                                    },
+                                    "TenderCheck08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift05GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift07GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemALU": {
+                                        "S": "MASSAND12YD"
+                                    },
+                                    "PriceLevelNumber": {
+                                        "S": "1"
+                                    },
+                                    "TenderAccount05TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationPhone": {
+                                        "S": "512-704-5921"
+                                    },
+                                    "ShipDate": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemWebSKU": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemPrice": {
+                                        "S": "27"
+                                    },
+                                    "TenderGift04GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "Discount": {
+                                        "S": "0"
+                                    },
+                                    "TenderCreditCard05CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard01TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount03TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TimeModified": {
+                                        "S": "8/8/2017 6:16:38 AM"
+                                    },
+                                    "TenderGiftCard01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck05CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard05TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemTaxAmount": {
+                                        "S": "0"
+                                    },
+                                    "TxnDate": {
+                                        "S": "8/8/2017"
+                                    },
+                                    "TenderCheck04CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemAttribute": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard03TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift06GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck03CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount08TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift10GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemUnitOfMeasure ": {
+                                        "S": "(1/2 YD)"
+                                    },
+                                    "TenderCreditCard04CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift01GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TimeCreated": {
+                                        "S": "8/8/2017 6:16:38 AM"
+                                    },
+                                    "ShippingInformationPhone": {
+                                        "NULL": true
+                                    },
+                                    "HistoryDocStatus": {
+                                        "S": "Regular"
+                                    },
+                                    "TenderAccount01TipAmount": {
+                                        "S": "0"
+                                    },
+                                    "TenderAccount07TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount10TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck09CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard05Cashback": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemManufacturer": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard05TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "CustomerListID": {
+                                        "S": "-3801663687496924159"
+                                    },
+                                    "TenderCash09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationFirstName": {
+                                        "S": "ABRAHAM"
+                                    },
+                                    "TenderCheck10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift03GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard01TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDesc2": {
+                                        "S": "SOILS & SANDS"
+                                    },
+                                    "SalesReceiptItemDesc1": {
+                                        "S": "MASONRY SAND"
+                                    },
+                                    "TenderGift08GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard04TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemExtendedPrice": {
+                                        "S": "27"
+                                    },
+                                    "Comments": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard02TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationSalutation": {
+                                        "NULL": true
+                                    },
+                                    "FQPrimaryKey": {
+                                        "S": "1327181411857106945|1|-6310223495175437823"
+                                    },
+                                    "TenderAccount06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemCommission": {
+                                        "S": "0"
+                                    },
+                                    "SalesReceiptItemWeight": {
+                                        "S": "0"
+                                    },
+                                    "ShippingInformationStreet": {
+                                        "NULL": true
+                                    },
+                                    "SalesOrderTxnID": {
+                                        "NULL": true
+                                    },
+                                    "Total": {
+                                        "S": "59.97"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "M": {
+                                    "SalesReceiptItemTaxCode": {
+                                        "S": "Non"
+                                    },
+                                    "ShippingInformationPostalCode": {
+                                        "NULL": true
+                                    },
+                                    "TaxAmount": {
+                                        "S": "0"
+                                    },
+                                    "SalesReceiptType": {
+                                        "S": "Sales"
+                                    },
+                                    "BillingInformationPhone2": {
+                                        "S": "512-266-9605"
+                                    },
+                                    "BillingInformationPhone3": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationPhone4": {
+                                        "NULL": true
+                                    },
+                                    "DiscountPercent": {
+                                        "S": "0"
+                                    },
+                                    "TenderAccount04TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck01CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemSize": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationState": {
+                                        "NULL": true
+                                    },
+                                    "Subtotal": {
+                                        "S": "59.97"
+                                    },
+                                    "TxnState": {
+                                        "S": "Normal"
+                                    },
+                                    "SalesReceiptItemAssociate": {
+                                        "S": "MISSY"
+                                    },
+                                    "TenderCheck08CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck07CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TxnID": {
+                                        "S": "1327181411857106945"
+                                    },
+                                    "StoreExchangeStatus": {
+                                        "S": "Modified"
+                                    },
+                                    "ShippingInformationCity": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemQty": {
+                                        "S": "3"
+                                    },
+                                    "BillingInformationStreet": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationLastName": {
+                                        "S": "GARCIA"
+                                    },
+                                    "TenderAccount06TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDiscount": {
+                                        "S": "0"
+                                    },
+                                    "TenderCheck02CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationPostalCode": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemSeqNo": {
+                                        "N": "2"
+                                    },
+                                    "ShippingInformationShipping": {
+                                        "S": "0"
+                                    },
+                                    "TenderCreditCard01CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard02Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TaxCategory": {
+                                        "S": "Sales Tx"
+                                    },
+                                    "ShippingInformationFullName": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck06CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemSerialNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDiscountType": {
+                                        "NULL": true
+                                    },
+                                    "FQSaveToCache": {
+                                        "BOOL": false
+                                    },
+                                    "TenderAccount10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemWebDesc": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemExtendedTax": {
+                                        "S": "0"
+                                    },
+                                    "SalesReceiptNumber": {
+                                        "N": "54562"
+                                    },
+                                    "TenderDebitCard01Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "StoreNumber": {
+                                        "N": "1"
+                                    },
+                                    "TenderGift03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationState": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard02TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemUPC": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationPhone3": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationPhone2": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationPhone4": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck10CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard03TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "ItemsCount": {
+                                        "N": "2"
+                                    },
+                                    "TenderCash04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "PromoCode": {
+                                        "NULL": true
+                                    },
+                                    "TrackingNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemListID": {
+                                        "S": "-6491711799304486655"
+                                    },
+                                    "BillingInformationCity": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount09TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard03CardName": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationCountry": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount01TenderAmount": {
+                                        "S": "59.97"
+                                    },
+                                    "TenderAccount03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemCost": {
+                                        "S": "0"
+                                    },
+                                    "ShippingInformationCompanyName": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard04TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "QuickBooksFlag": {
+                                        "S": "Completed"
+                                    },
+                                    "TenderType": {
+                                        "S": "Account"
+                                    },
+                                    "TenderAccount09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TaxPercentage": {
+                                        "S": "0"
+                                    },
+                                    "TenderDebitCard04Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift09GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift02GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "Cashier": {
+                                        "S": "MISSY"
+                                    },
+                                    "TenderAccount02TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "Workstation": {
+                                        "N": "8"
+                                    },
+                                    "BillingInformationCountry": {
+                                        "NULL": true
+                                    },
+                                    "ShippingInformationShipBy": {
+                                        "NULL": true
+                                    },
+                                    "Associate": {
+                                        "S": "MISSY"
+                                    },
+                                    "TenderCheck01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard02CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationCompanyName": {
+                                        "S": "ABRAHAM GARCIA"
+                                    },
+                                    "TenderDebitCard03Cashback": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDiscountPercent": {
+                                        "S": "0"
+                                    },
+                                    "TenderCheck08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift05GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift07GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemALU": {
+                                        "S": "LEHIGHGM"
+                                    },
+                                    "PriceLevelNumber": {
+                                        "S": "1"
+                                    },
+                                    "TenderAccount05TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationPhone": {
+                                        "S": "512-704-5921"
+                                    },
+                                    "ShipDate": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemWebSKU": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemPrice": {
+                                        "S": "10.99"
+                                    },
+                                    "TenderGift04GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "Discount": {
+                                        "S": "0"
+                                    },
+                                    "TenderCreditCard05CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard01TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount03TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TimeModified": {
+                                        "S": "8/8/2017 6:16:38 AM"
+                                    },
+                                    "TenderGiftCard01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck05CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard05TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemTaxAmount": {
+                                        "S": "0"
+                                    },
+                                    "TxnDate": {
+                                        "S": "8/8/2017"
+                                    },
+                                    "TenderCheck04CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemAttribute": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard03TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift06GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck03CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount08TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift10GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemUnitOfMeasure ": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard04CardName": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift01GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TimeCreated": {
+                                        "S": "8/8/2017 6:16:38 AM"
+                                    },
+                                    "ShippingInformationPhone": {
+                                        "NULL": true
+                                    },
+                                    "HistoryDocStatus": {
+                                        "S": "Regular"
+                                    },
+                                    "TenderAccount01TipAmount": {
+                                        "S": "0"
+                                    },
+                                    "TenderAccount07TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount10TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCheck09CheckNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderDebitCard05Cashback": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemManufacturer": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard05TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "CustomerListID": {
+                                        "S": "-3801663687496924159"
+                                    },
+                                    "TenderCash09TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash05TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationFirstName": {
+                                        "S": "ABRAHAM"
+                                    },
+                                    "TenderCheck10TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGift03GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash03TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash07TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard01TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemDesc2": {
+                                        "S": "LEHIGH TYPE N/S"
+                                    },
+                                    "SalesReceiptItemDesc1": {
+                                        "S": "GREY MASONRY"
+                                    },
+                                    "TenderGift08GiftCertificateNumber": {
+                                        "NULL": true
+                                    },
+                                    "TenderGiftCard04TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit02TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCash01TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderDeposit04TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemExtendedPrice": {
+                                        "S": "32.97"
+                                    },
+                                    "Comments": {
+                                        "NULL": true
+                                    },
+                                    "TenderAccount08TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "TenderCreditCard02TipAmount": {
+                                        "NULL": true
+                                    },
+                                    "BillingInformationSalutation": {
+                                        "NULL": true
+                                    },
+                                    "FQPrimaryKey": {
+                                        "S": "1327181411857106945|2|-6491711799304486655"
+                                    },
+                                    "TenderAccount06TenderAmount": {
+                                        "NULL": true
+                                    },
+                                    "SalesReceiptItemCommission": {
+                                        "S": "0"
+                                    },
+                                    "SalesReceiptItemWeight": {
+                                        "S": "0"
+                                    },
+                                    "ShippingInformationStreet": {
+                                        "NULL": true
+                                    },
+                                    "SalesOrderTxnID": {
+                                        "NULL": true
+                                    },
+                                    "Total": {
+                                        "S": "59.97"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "SequenceNumber": "35133500000000024006615986",
+                "SizeBytes": 11273,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "eventSourceARN": "arn:aws:dynamodb:us-east-1:652113781882:table/QuickbooksReceipt/stream/2017-08-01T19:27:36.366"
+        }
+    ]
+}

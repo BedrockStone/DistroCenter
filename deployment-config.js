@@ -24,7 +24,7 @@ exports.queryOrders = {
   "publish": true, 
   "runtime": "nodejs6.10",
   "name":"QueryOrders"
-}
+};
 
 exports.justLog = {
   "profile": "bedrock",
@@ -37,4 +37,17 @@ exports.justLog = {
   "publish": true, 
   "runtime": "nodejs6.10",
   "name":"JustLog"
+};
+
+exports.insertDistroShippableSalesReceipt = {
+  "profile": "bedrock",
+  "region": "us-east-1",
+  "handler": "insertDistroShippableSalesReceipt.handler",
+  "role": "arn:aws:iam::652113781882:role/service-role/write_to_dynamo",
+  "functionName": "insertDistroShippableSalesReceipt",
+  "timeout": 300,
+  "memorySize": 128,
+  "publish": true, 
+  "runtime": "nodejs6.10",
+  "name":"insertDistroShippableSalesReceipt"
 };

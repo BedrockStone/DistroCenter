@@ -8,15 +8,12 @@ exports.handler = (event, context, callback) => {
     console.log('Received event', JSON.stringify(event, null, 2));
     const dynamoDb = new AWS.DynamoDB.DocumentClient();
     
-    let TableName = "QuickbooksReceipt";
+    let TableName = "DistroShippableSalesReceipt";
     let params = {
-        TableName,
-        "IndexName": "StoreNumber-ShipDate-index-copy",
-        "KeyConditionExpression" : "StoreNumber = :val",
-        "ExpressionAttributeValues": { ":val": parseInt(event.pathParameters.storeNumber)}
+        TableName
     };
     console.log(JSON.stringify(params));
-    dynamoDb.query(params, (err, data)=>{
+    dynamoDb.scan(params, (err, data)=>{
         if(err){
             console.log('DynamoDb error: ', JSON.stringify(err, null, 2));
             let response = lambdaProxy.response(500, {"Content-Type":"application/json"}, err);
@@ -27,7 +24,7 @@ exports.handler = (event, context, callback) => {
             console.log('DynamoDb response:', JSON.stringify(data, null, 2));
             let response = lambdaProxy.response(200, 
                     {"Content-Type":"application/json",
-                    "Access-Control-Allow-Origin":"'*'"
+                    "Access-Control-Allow-Origin":"*"
                 },data);
             callback(null, response);
         }

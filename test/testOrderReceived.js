@@ -44,7 +44,13 @@ describe('The dynamo db handler', () => {
                 let dynamoParams = putRecordSpy.args[0][0];
                 var item = dynamoParams.Item;
                 Object.keys(testBody).forEach(key => {
-                    item[key].should.equal(testBody[key]);
+                    // we do not send null or undefined in payloads
+                    console.log(`${key}: ${testBody[key]}`);
+                    if(testBody[key] === null || testBody[key] === undefined) {
+                        item.should.not.include({key:testBody[key]});
+                    } else {
+                        expect(item[key]).to.deep.equal(testBody[key]);
+                    }
                 });
             });
     });
