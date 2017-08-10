@@ -12,9 +12,16 @@ exports.handler = (event, context, callback) => {
         TableName,
         Item
     };
+    // clean up the item (no empty fields)
+    Object.keys(Item).forEach((key) => {
+        if (Item[key] === undefined || Item[key] === null || Item[key].toString() === "") {
+            delete Item[key];
+        }
+    });
     dynamoDb.put(params, (err, data) => { 
         let response;
         if(err){
+            console.error(`Error: ${JSON.stringify(err)}`);
             response = lambdaProxy.response(500, 
                     {
                         "Content-Type":"application/json",
@@ -22,6 +29,7 @@ exports.handler = (event, context, callback) => {
                     },
                     err);
         } else {
+            console.log(`Success: ${JSON.stringify(data)}`)
             response = lambdaProxy.response(200, 
                     {
                         "Content-Type":"application/json",
