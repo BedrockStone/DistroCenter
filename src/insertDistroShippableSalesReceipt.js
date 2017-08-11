@@ -1,4 +1,5 @@
 'use strict';
+const removeEmptyValues = require('./utilities').removeEmptyValues;
 
 exports.handler = (event, context, callback) => {
     console.log('Received event:', JSON.stringify(event, null, 2));
@@ -24,7 +25,8 @@ exports.handler = (event, context, callback) => {
                 }
             });
             if (foundItem){
-                params.Item = salesReceipt;
+                let items = removeEmptyValues(salesReceipt);
+                params.Item = items;
                 dynamoDb.putItem(params, (err, data)=>{
                 if(err){
                     console.error(JSON.stringify(err))
