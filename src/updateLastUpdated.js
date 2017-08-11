@@ -1,10 +1,10 @@
 'use strict';
-
+const AWS = require('aws-sdk');
+   
 exports.handler = (event, context, callback) => {
     //console.log('Received event:', JSON.stringify(event, null, 2));
-    const AWS = require('aws-sdk');
     const dynamoDb = new AWS.DynamoDB.DocumentClient();
-    
+        
     let TableName = "DistroLastUploaded";
     let params = {
         TableName

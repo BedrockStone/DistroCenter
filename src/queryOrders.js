@@ -1,11 +1,8 @@
 "use strict";
-const AWS = require('aws-sdk');
-const lambdaProxy = require('lambda-proxy-response');
-//const config = require('./config');
-
-
 exports.handler = (event, context, callback) => {
     console.log('Received event', JSON.stringify(event, null, 2));
+    const AWS = require('aws-sdk');
+    const lambdaProxy = require('lambda-proxy-response');
     const dynamoDb = new AWS.DynamoDB.DocumentClient();
     
     let TableName = "DistroShippableSalesReceipt";

@@ -14,14 +14,11 @@ const putRecordSpy = sinon.spy((params, callback )=> {
     callback(null,{})
 });
 
-const getRecordSpy = sinon.spy((params, callback ) => {
-    callback(null, {})
-});
-
 AWS.mock('DynamoDB.DocumentClient','put', putRecordSpy);
 // These work in prod, let's get the tests working too
 describe('The LastUpdated handler', () => {
     //let testBody = JSON.parse(testEvent.body);
+    /*
     xit('will execute a dynamo put put http requests', ()=>{
           return LambdaTester( myHandler )
             .event( testEvent )
@@ -29,6 +26,7 @@ describe('The LastUpdated handler', () => {
                 putRecordSpy.called.should.be.true;
             });
     });
+    */
     xit('sets the dynamo db table properly', ()=> {
           return LambdaTester( myHandler )
             .event( testEvent )

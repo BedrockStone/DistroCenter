@@ -1,23 +1,17 @@
 'use strict';
 const lambdaProxy = require('lambda-proxy-response');
-
+const removeEmptyValues = require('./utilities').removeEmptyValues;
 exports.handler = (event, context, callback) => {
     console.log('Received event:', JSON.stringify(event, null, 2));
     const AWS = require('aws-sdk');
     const dynamoDb = new AWS.DynamoDB.DocumentClient();
     let TableName = "DistroShippableSalesReceipt";
     let Item = JSON.parse(event.body);
-    
+    Item = removeEmptyValues(Item);
     let params = {
         TableName,
         Item
     };
-    // clean up the item (no empty fields)
-    Object.keys(Item).forEach((key) => {
-        if (Item[key] === undefined || Item[key] === null || Item[key].toString() === "") {
-            delete Item[key];
-        }
-    });
     dynamoDb.put(params, (err, data) => { 
         let response;
         if(err){
