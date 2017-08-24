@@ -64,3 +64,16 @@ exports.updateDistroShippableSalesReceipt = {
   "runtime": "nodejs6.10",
   "name":"updateDistroShippableSalesReceipt"
 };
+
+exports.orderShipped = {
+  "profile": "bedrock",
+  "region": "us-east-1",
+  "handler": "orderShipped.handler",
+  "role": "arn:aws:iam::652113781882:role/service-role/write_to_dynamo",
+  "functionName": "orderShipped",
+  "timeout": 300,
+  "memorySize": 128,
+  "publish": true, 
+  "runtime": "nodejs6.10",
+  "name":"orderShipped"
+};

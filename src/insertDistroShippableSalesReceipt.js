@@ -19,7 +19,7 @@ exports.handler = (event, context, callback) => {
             let foundItem = false;
             Object.keys(lines).forEach((lineNumber) => {
                 // the key is the line number, the value is the actual item
-                if (lines[lineNumber].M.SalesReceiptItemDesc1.S.match(/^D\d+[A-Z]$/)){
+                if (lines[lineNumber].M.SalesReceiptItemDesc1.S.match(/^D(\d+|Q)(F|D)$/)){
                     console.log('found shipping line item. Copying to DistroShippableSalesReceipt table');
                     foundItem = true;
                 }
